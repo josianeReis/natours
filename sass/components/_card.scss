@@ -1,9 +1,16 @@
 .card {
-  background-color: aqua;
-  height: 50rem;
-  transition: all .8s;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
 
-  &:hover {
+  &__side {
+    background-color: aqua;
+    color: #ffff;
+    font-size: 18px;
+    height: 50rem;
+    transition: all .8s;
+  }
+
+  &:hover &__side {
     transform: rotateY(180deg);
   }
 }
